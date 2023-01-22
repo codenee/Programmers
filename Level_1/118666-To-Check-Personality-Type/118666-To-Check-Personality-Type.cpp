@@ -9,7 +9,6 @@ string solution(vector<string> survey, vector<int> choices) {
 
 	map<char, int> mk;
 	for (int i = 0; i < choices.size(); i++) {
-		for (int j = 0; j < survey.size(); j++) {
 			int cnt = 0;
 			if (choices[i] <= 4) {
 				cnt = 4 - choices[i];
@@ -22,7 +21,6 @@ string solution(vector<string> survey, vector<int> choices) {
 				mk[survey[i][1]] += cnt;
 				break;
 			}
-		}
 		
 	}
 
