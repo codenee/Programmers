@@ -1,4 +1,4 @@
-<h2><a href="hhttps://school.programmers.co.kr/learn/courses/30/lessons/17682">17682. 1차 다트 게임</a></h2><h3>Level 1</h3>
+<h2><a href="https://school.programmers.co.kr/learn/courses/30/lessons/17682">17682. 1차 다트 게임</a></h2><h3>Level 1</h3>
 
 1.  다트 게임은 총 3번의 기회로 구성된다.
 2.  각 기회마다 얻을 수 있는 점수는 0점에서 10점까지이다.
