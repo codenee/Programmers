@@ -8,3 +8,9 @@
 <h2> comments </h2>
 <h3>solution 1 </h3>
 <p>기존 괄호 문제는 stack으로 바로 풀 수 있었지만, 왼쪽으로 회전하는 조건이 들어가서 작업을 하나 더 해야 하는 문제입니다.</p>
+<h3> solution2</h3>
+std::rotate 함수를 사용하여 문자열을 회전시키는 풀이입니다.
+
+std::rotate(s.begin(), s.begin() + 3, s.end()); // 3칸씩 왼쪽 이동
+
+std::rotate(s.begin(), s.end() - 1, s.end()); // 1칸씩 오른쪽 이동
