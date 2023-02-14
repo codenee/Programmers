@@ -7,6 +7,7 @@
 <strong>Output:</strong> 3 </pre>
 
 <h2> comments </h2>
+<img src="./img/64062-solution.JPG" width="816" height="571" />
 <h3>solution 1 </h3>
 <p> 점프 뛸 수 있는 구간의 최댓값을 구하고, 구간 마다 최댓값의 최솟값이 정답입니다.
 </p>
