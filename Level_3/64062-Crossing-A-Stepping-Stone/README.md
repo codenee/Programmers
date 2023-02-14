@@ -1,4 +1,4 @@
-<h2><a href="https://school.programmers.co.kr/learn/courses/30/lessons/64062">64062. 징검다리 건너기 </a></h2><h3>Level 2</h3>
+<h2><a href="https://school.programmers.co.kr/learn/courses/30/lessons/64062">64062. 징검다리 건너기 </a></h2><h3>Level 3</h3>
 
 디딤돌에 적힌 숫자가 순서대로 담긴 배열 `stones`와 한 번에 건너뛸 수 있는 디딤돌의 최대 칸수 `k`가 매개변수로 주어질 때, 최대 몇 명까지 징검다리를 건널 수 있는지 `return` 하도록 `solution` 함수를 완성해주세요.
 <p>&nbsp;</p>
