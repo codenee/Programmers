@@ -22,14 +22,21 @@ room구조체 원소들은 오름차순으로 정렬되야 하는데 vector와 p
 room형식으로 가지는 vector와 priority_queue를 생성합니다.
 </p>
 
+
+
 <h3> solution2</h3>
 <p>
 priority_queue 에는 `end time`만 저장합니다. 
 
 book_time배열을 `start time`을 기준으로 오름차순으로 정렬합니다.
+
 (pq `end time` <=  vector `start time` )비교하여 시간이 겹치는지 확인합니다.
+
 시간이 안겹친다면 -> 같은 방 배정으로 `pq.pop`연산을 수행합니다.
+
 시간이 겹친다면 -> 다른 방 배정으로 `pq.push`연산을 수행합니다.
+
 pq의 크기가 방의 개수가 됩니다.
+
 pq는 `end time` 저장소임과 동시에 방의 개수를 나타낼 수 있습니다.
 </p>
