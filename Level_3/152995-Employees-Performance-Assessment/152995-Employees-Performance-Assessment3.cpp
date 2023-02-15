@@ -3,32 +3,31 @@
 #include <algorithm>
 
 using namespace std;
-bool comp(vector<int> a, vector<int> b)
-{
+
+const bool cmp(vector<int>& a, vector<int>& b){
     return a[0] != b[0] ? a[0] > b[0] : a[1] < b[1];
 }
 
-int solution(vector<vector<int>> scores)
-{
+int solution(vector<vector<int>> scores) {
     int rank = 0;
-    int max_score = 0;
-    vector<int> vec = scores[0], vecSum;
-    sort(scores.begin(), scores.end(), comp);
-    for (vector<int> it : scores)
-    {
-        if (it[1] < max_score)
-        {
-            if (it == vec) return -1;
+    int nMax = 0;
+    
+    vector<int> vecSum, target = scores[0];
+    sort(begin(scores), end(scores), cmp);
+    
+    for(vector<int> it : scores){
+        if(it[1] < nMax){
+            if(it == target){
+                return -1;
+            }
         }
-        else
-        {
+        else{
             vecSum.push_back(it[0] + it[1]);
-            max_score = max(max_score, it[1]);
+            nMax = max(nMax, it[1]);
         }
     }
+    sort(begin(vecSum), end(vecSum), greater<int>());
+    rank = find( begin(vecSum), end(vecSum), target[0] + target[1]) - begin(vecSum) + 1;
 
-    sort(vecSum.begin(), vecSum.end(), greater<int>());
-    rank = find(vecSum.begin(), vecSum.end(), vec[0] + vec[1]) - vecSum.begin() + 1;
-
-    return rank;
+    return answer;
 }
